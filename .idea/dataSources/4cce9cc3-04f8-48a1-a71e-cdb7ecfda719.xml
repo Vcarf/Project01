@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="java@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="java">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="books"/>
+    <schema id="4" parent="1" name="crm"/>
+    <schema id="5" parent="1" name="db_studentcheck"/>
+    <schema id="6" parent="1" name="information_schema"/>
+    <schema id="7" parent="1" name="mydb"/>
+    <schema id="8" parent="1" name="mydb3"/>
+    <schema id="9" parent="1" name="mysql"/>
+    <schema id="10" parent="1" name="performance_schema"/>
+    <schema id="11" parent="1" name="sakila"/>
+    <schema id="12" parent="1" name="smallecw"/>
+    <schema id="13" parent="1" name="spring_01"/>
+    <schema id="14" parent="1" name="sys"/>
+    <schema id="15" parent="1" name="world"/>
+    <table id="16" parent="2" name="admin"/>
+    <table id="17" parent="2" name="department"/>
+    <table id="18" parent="2" name="news"/>
+    <table id="19" parent="2" name="stu"/>
+    <table id="20" parent="2" name="teacher"/>
+    <table id="21" parent="2" name="user"/>
+    <table id="22" parent="2" name="wokers"/>
+    <column id="23" parent="16" name="AdminID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="24" parent="16" name="AdminName">
+      <Position>2</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="25" parent="16" name="AdminPwd">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="26" parent="16" name="AdminType">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="27" parent="16" name="LastLoginTime">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="28" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>AdminID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="29" parent="17" name="d_id">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="17" name="d_name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="17" name="d_w">
+      <Position>3</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="32" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>d_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="33" parent="18" name="NewsID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="34" parent="18" name="NewsTitle">
+      <Position>2</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <column id="35" parent="18" name="NewsContent">
+      <Position>3</Position>
+      <DataType>longtext|0</DataType>
+    </column>
+    <column id="36" parent="18" name="NewsTime">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="37" parent="18" name="AdminName">
+      <Position>5</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <key id="38" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>NewsID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="39" parent="19" name="cno">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="19" name="cname">
+      <Position>2</Position>
+      <DataType>varchar(12)|0</DataType>
+    </column>
+    <column id="41" parent="19" name="cpassword">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <key id="42" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>cno</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="43" parent="20" name="teacher_id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="44" parent="20" name="teacher_name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="20" name="teacher_college">
+      <Position>3</Position>
+      <DataType>varchar(500)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="46" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>teacher_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="47" parent="21" name="tel">
+      <Position>1</Position>
+      <DataType>char(10)|0</DataType>
+    </column>
+    <column id="48" parent="21" name="passwd">
+      <Position>2</Position>
+      <DataType>char(6)|0</DataType>
+    </column>
+    <column id="49" parent="22" name="wid">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="50" parent="22" name="wname">
+      <Position>2</Position>
+      <DataType>varchar(12)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="22" name="wmoney">
+      <Position>3</Position>
+      <DataType>float|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="22" name="wdate">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="53" parent="22" name="wlader">
+      <Position>5</Position>
+      <DataType>varchar(12)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="22" name="wreads">
+      <Position>6</Position>
+      <DataType>int(4)|0</DataType>
+    </column>
+    <column id="55" parent="22" name="wp">
+      <Position>7</Position>
+      <DataType>varchar(60)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="56" parent="22" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>wid</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
